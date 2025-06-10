@@ -106,7 +106,7 @@
 |11|3 Day travel so call reducer with current wagon state and action.type='travel' and action.payload=3 days of travel|wagon = stateReducer(wagon, {type:'travel', payload:3});|console.log('Trip 4: ',wagon);|
 |12|Use Test case if we continue to travel even if supplies are negative|wagon = stateReducer(wagon, {type:'travel', payload:3});|console.log('Trip 5: ',wagon);|
 |X|Extra: lets stop and fill up our reserves |wagon = stateReducer(wagon, {type:'fill up'});|console.log('Fill up: ',wagon)|
-##### =================================================================================================================================================================================				                                   
+##### =========================================================================================			                                   
 |13. QUESTION EXTRAS  | STORED STATE FUNCTION CALL  | CONSOLE.LOG |
 | ------------- | ------------- | --- |
 |13.a.Add a cash property|| |
