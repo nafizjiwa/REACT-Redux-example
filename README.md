@@ -14,8 +14,9 @@
 
           const stateReducer = (state = initialWagonState, action) => {
                
-//THIRD.A. HELP REDUCER DECIDE WHAT THE STATE SHOULD BE WITH SWITCH STATEMENTS
-//FOUR MAKE THE FIRST CASE for gathering supplies for a trip
+//THIRD.A. HELP REDUCER DECIDE WHAT THE STATE SHOULD BE WITH SWITCH STATEMENTS </BR>
+//FOUR MAKE THE FIRST CASE for gathering supplies for a trip</BR>
+
            	 switch(action.type){
                   	 case'gather':{
                      	return {
