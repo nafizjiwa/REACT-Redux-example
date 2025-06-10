@@ -15,16 +15,17 @@
                const stateReducer = (state = initialWagonState, action) => {
                
 //THIRD HELP REDUCER DECIDE WHAT THE STATE SHOULD BE WITH SWITCH STATEMENTS START WITH  A DEFAULT CASE IF NO MATCH FOUND.
- 	 switch(action.type){
-   	 case'gather':{
-      	return {
-   	 // use spread operator to add old state then at old state to update to new with the increase in supplies and days.
-   		...state,
-     	 	supplies: state.supplies+15,
-      		distance: state.distance,
-      		days: state.days + 1
-      		}
-  	  }
+
+           	 switch(action.type){
+                  	 case'gather':{
+                     	return {
+        	           // use spread operator to add old state then at old state to update to new with the increase in supplies and days.
+                       		...state,
+                         	 	supplies: state.supplies+15,
+                          		distance: state.distance,
+                          		days: state.days + 1
+           		       }
+       	            }
     // FIVE ADD AN action.type for 'travel' based on number of days a player wants to travel
     case 'travel': {
       const days = action.payload;
