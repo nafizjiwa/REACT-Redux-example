@@ -98,7 +98,7 @@
             }
           }
 
-//7. Play the game call the reducer with state=undefined action=empty... continue to store 				let wagon = stateReducer(undefined, {});                                               	               console.log('Default: ',wagon);
+//7. Play the game call the reducer with state=undefined action=empty... continue to store 				let wagon = stateReducer(undefined, {});</BR>                                               	               console.log('Default: ',wagon);</BR>
 //8. Day 1 Call reducer to travel this day with state=wagon action type=travel actionpayload/day = 1    			wagon = stateReducer(wagon, {type:'travel', payload:1});             		               console.log('Trip 1: ', wagon);
 //9. Day2 Call reducer to stop and gather state=wagon action.type=gather no action.payload      				wagon = stateReducer(wagon, {type:'gather'});          	                                            console.log('Trip 2: ',wagon);
 //10. Day3 The wagon tips over in a river call reducer with current state wagon and action.type = tippedwagon		 wagon = stateReducer(wagon, {type:'tippedWagon'});				 console.log('Trip 3: ',wagon);
