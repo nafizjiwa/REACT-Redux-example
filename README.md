@@ -20,11 +20,10 @@
            	 switch(action.type){
                   	 case'gather':{
                      	return {
-        	           // use spread operator to add old state then at old state to update to new with the increase in supplies and days.
+        	           // use spread operator to add old state then update to new with only things that change... supplies and days.
                        		...state,
-                         	 	supplies: state.supplies+15,
-                          		distance: state.distance,
-                          		days: state.days + 1
+                         	supplies: state.supplies+15,
+                          	days: state.days + 1
            		       }
        	            }
 // FIVE ADD AN action.type for 'travel' based on number of days a player wants to travel
