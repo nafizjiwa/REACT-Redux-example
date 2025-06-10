@@ -18,9 +18,9 @@
 //FOUR MAKE THE FIRST CASE for gathering supplies for a trip</BR>
 
            	 switch(action.type){
-                  	 case'gather':{
+                     case'gather':{
                      	return {
-        	           // use spread operator to add old state then update to new with only things that change... supplies and days.
+        	     // use spread operator to add old state then update to new with only things that change... supplies and days.
                        		...state,
                          	supplies: state.supplies+15,
                           	days: state.days + 1
