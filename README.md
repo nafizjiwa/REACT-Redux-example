@@ -14,8 +14,8 @@
 
           const stateReducer = (state = initialWagonState, action) => {
                
-//THIRD HELP REDUCER DECIDE WHAT THE STATE SHOULD BE WITH SWITCH STATEMENTS START WITH  A DEFAULT CASE IF NO MATCH FOUND.
-
+//THIRD.A. HELP REDUCER DECIDE WHAT THE STATE SHOULD BE WITH SWITCH STATEMENTS
+//FOUR MAKE THE FIRST CASE for gathering supplies for a trip
            	 switch(action.type){
                   	 case'gather':{
                      	return {
@@ -56,6 +56,7 @@
                      }
                    }
 //13.b.Add a sell case
+
                    case 'sell': {
                      const sellSupplies = state.supplies -20;
                      if(sellSupplies < 0 ){ 
@@ -86,7 +87,8 @@
                      cash: state.cash/2,
                    }
                  }
-//FOUR MAKE THE FIRST CASE for gathering supplies for a trip
+//THIRD START WITH A DEFAULT CASE IF NO MATCH FOUND.
+
                default: {
                      	return state;
                   	 }
