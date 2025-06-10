@@ -2,13 +2,13 @@
 
 //FIRST DEFINE INITIAL STATE
      
-      const initialWagonState = {
-        supplies: 100,
-        distance: 0,
-        days: 0,
-        //13.Add a cashProperty
-        cash: 200,
-      }
+                const initialWagonState = {
+                  supplies: 100,
+                  distance: 0,
+                  days: 0,
+                  //13.Add a cashProperty
+                  cash: 200,
+                }
 
 //SECOND DEFINE A REDUCER TO MANAGE STATE
 const stateReducer = (state = initialWagonState, action) => {
