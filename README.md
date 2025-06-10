@@ -101,22 +101,12 @@
 | ------------- | ------------- | ------------- | ------------- |
 |7|Play the game call the reducer with state=undefined action=empty... continue to store|let wagon = stateReducer(undefined, {}); |console.log('Default: ',wagon);|
 |8|Day 1 Call reducer to travel this day with state=wagon action type=travel actionpayload/day = 1 |wagon = stateReducer(wagon, {type:'travel', payload:1});|console.log('Trip 1: ', wagon);|
-|9| ------------- | ------------- | ------------- |
-|10| ------------- | ------------- | ------------- |
-|11| ------------- | ------------- | ------------- |
-|12| ------------- | ------------- | ------------- |
-//8.    			</BR>
-     -            		                        
-//9. Day2 Call reducer to stop and gather state=wagon action.type=gather no action.payload      				</BR>
-     - wagon = stateReducer(wagon, {type:'gather'});          	                                             console.log('Trip 2: ',wagon);</BR>
-//10. Day3 The wagon tips over in a river call reducer with current state wagon and action.type = tippedwagon		 
-     - wagon = stateReducer(wagon, {type:'tippedWagon'});				                                   console.log('Trip 3: ',wagon);</BR>
-//11. 3 Day travel so call reducer with current wagon state and action.type='travel' and action.payload=3 days of travel 	
-     - wagon = stateReducer(wagon, {type:'travel', payload:3});			                                   console.log('Trip 4: ',wagon);
-//12. Use Test case if we continue to travel even if supplies are negative 							
-     -wagon = stateReducer(wagon, {type:'travel', payload:3});			                                   console.log('Trip 5: ',wagon);
-//Extra: lets stop and fill up our reserves 										
-     - wagon = stateReducer(wagon, {type:'fill up'});					                                   console.log('Fill up: ',wagon)
+|9|Day2 Call reducer to stop and gather state=wagon action.type=gather no action.payload|wagon = stateReducer(wagon, {type:'gather'});|console.log('Trip 2: ',wagon);|
+|10| Day3 The wagon tips over in a river call reducer with current state wagon and action.type = tippedwagon|wagon = stateReducer(wagon, {type:'tippedWagon'});|console.log('Trip 3: ',wagon)|
+|11|3 Day travel so call reducer with current wagon state and action.type='travel' and action.payload=3 days of travel|wagon = stateReducer(wagon, {type:'travel', payload:3});|console.log('Trip 4: ',wagon);|
+|12|Use Test case if we continue to travel even if supplies are negative|wagon = stateReducer(wagon, {type:'travel', payload:3});|console.log('Trip 5: ',wagon);|
+|X|Extra: lets stop and fill up our reserves |wagon = stateReducer(wagon, {type:'fill up'});|console.log('Fill up: ',wagon)|
+##### =================================================================================================================================================================================				                                   
 |13. QUESTION EXTRAS  | STORED STATE FUNCTION CALL  | CONSOLE.LOG |
 | ------------- | ------------- | --- |
 |13.a.Add a cash property|| |
