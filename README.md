@@ -21,7 +21,7 @@
                      case'gather':{
                      	return {
         	     // use spread operator to add old state then update to new with only things that change... supplies and days.
-                       		...state,
+                       	...state,
                          	supplies: state.supplies+15,
                           	days: state.days + 1
            		       }
