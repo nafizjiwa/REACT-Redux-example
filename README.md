@@ -12,7 +12,7 @@
 
 //SECOND DEFINE A REDUCER TO MANAGE STATE
 
-               const stateReducer = (state = initialWagonState, action) => {
+          const stateReducer = (state = initialWagonState, action) => {
                
 //THIRD HELP REDUCER DECIDE WHAT THE STATE SHOULD BE WITH SWITCH STATEMENTS START WITH  A DEFAULT CASE IF NO MATCH FOUND.
 
