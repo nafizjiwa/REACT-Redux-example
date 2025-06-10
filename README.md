@@ -97,7 +97,8 @@
                   	 }
             }
           }
-
+|QUESTION | INSTRUCTION | STORED STATE FUNCTION CALL  | CONSOLE.LOG |
+|7.|Play the game call the reducer with state=undefined action=empty... continue to store|let wagon = stateReducer(undefined, {}); |console.log('Default: ',wagon);|
 //7. Play the game call the reducer with state=undefined action=empty... continue to store 				</BR>
      - let wagon = stateReducer(undefined, {});                                 	                         console.log('Default: ',wagon);</BR>
 //8. Day 1 Call reducer to travel this day with state=wagon action type=travel actionpayload/day = 1    			</BR>
