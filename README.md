@@ -1,6 +1,7 @@
 # REACT-Redux-example
 
 //FIRST DEFINE INITIAL STATE
+     
       const initialWagonState = {
         supplies: 100,
         distance: 0,
