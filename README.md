@@ -69,6 +69,8 @@
                        cash: state.cash + 5,
                      }
                    }
+//13. EXTRAS c.d.
+
                  case "fill up":{
                    return {
                      ...state,
