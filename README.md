@@ -106,11 +106,21 @@
      - wagon = stateReducer(wagon, {type:'gather'});          	                                             console.log('Trip 2: ',wagon);</BR>
 //10. Day3 The wagon tips over in a river call reducer with current state wagon and action.type = tippedwagon		 
      - wagon = stateReducer(wagon, {type:'tippedWagon'});				                                   console.log('Trip 3: ',wagon);</BR>
-//11. 3 Day travel so call reducer with current wagon state and action.type='travel' and action.payload=3 days of travel 	wagon = stateReducer(wagon, {type:'travel', payload:3});			console.log('Trip 4: ',wagon);
-//12. Use Test case if we continue to travel even if supplies are negative 							wagon = stateReducer(wagon, {type:'travel', payload:3});			console.log('Trip 5: ',wagon);
-//Extra: lets stop and fill up our reserves 										wagon = stateReducer(wagon, {type:'fill up'});					console.log('Fill up: ',wagon);
-//13.a.Add a cash property
-//13.b. Add a 'sell' Case		 wagon = stateReducer(wagon, {type:'sell'});							console.log('Sell For Cash: ',wagon);
-//13.c.Add a 'buy' case  		wagon = stateReducer(wagon, {type:'buy'});							console.log('Buy to gain supplies: ',wagon);
-//13.d.Add a 'theft' case		wagon = stateReducer(wagon, {type:'theft'});							console.log('Theft of cash: ',wagon);
+//11. 3 Day travel so call reducer with current wagon state and action.type='travel' and action.payload=3 days of travel 	
+     - wagon = stateReducer(wagon, {type:'travel', payload:3});			                                   console.log('Trip 4: ',wagon);
+//12. Use Test case if we continue to travel even if supplies are negative 							
+     -wagon = stateReducer(wagon, {type:'travel', payload:3});			                                   console.log('Trip 5: ',wagon);
+//Extra: lets stop and fill up our reserves 										
+     - wagon = stateReducer(wagon, {type:'fill up'});					                                   console.log('Fill up: ',wagon)
+|13. QUESTION EXTRAS  | STORED STATE FUNCTION CALL  | CONSOLE.LOG |
+| ------------- | ------------- | --- |
+|13.a.Add a cash property|| |
+|13.b. Add a 'sell' Case | wagon = stateReducer(wagon, {type:'sell'}); |console.log('Sell For Cash: ',wagon); |
+|13.c.Add a 'buy' case  | wagon = stateReducer(wagon, {type:'buy'}); | console.log('Buy to gain supplies: ',wagon); |   
+|13.d.Add a 'theft' case| wagon = stateReducer(wagon, {type:'theft'}); |console.log('Theft of cash: ',wagon); |
+ 
+
+		 							
+ 									
+							
 
