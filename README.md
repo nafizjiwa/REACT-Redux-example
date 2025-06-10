@@ -69,7 +69,7 @@
                        cash: state.cash + 5,
                      }
                    }
-//13. EXTRAS c.d.
+//13. EXTRAS c.BUY d.THEFT AND FILL UP AGAIN
 
                  case "fill up":{
                    return {
