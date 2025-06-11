@@ -96,7 +96,7 @@
                   	 }
             }
           }
-|QUESTION | INSTRUCTION | STORED STATE FUNCTION CALL  | ******* CONSOLE.LOG ******* |
+|QUESTION | INSTRUCTION | STORED STATE FUNCTION CALL  | CONSOLE.LOG  |
 | ------------- | ------------- | ------------- | ------------------- |
 |7|Play the game call the reducer with |let wagon = stateReducer(undefined, {}); |console.log('Default: ',wagon);|
 | | state=undefined action=empty... continue to store state |  |  |
